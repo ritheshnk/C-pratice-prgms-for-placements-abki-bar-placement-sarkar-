@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<stdio.h>
+int main ()
+{
+  int a,b;
+  scanf("%d",&a);
+  scanf("%d",&b);
+  printf("before interchaning value of a= %d & b=%d\n",a,b);
+  a=a+b;
+  b=a-b;
+  a=a-b;
+  printf("after interchaning value of a= %d & b=%d",a,b);
+  
+}
