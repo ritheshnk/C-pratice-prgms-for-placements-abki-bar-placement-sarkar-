@@ -1,0 +1,43 @@
+#include<stdio.h>
+void print(int *a, int n)
+{
+  for(int i=0;i<n;i++)
+    {
+      printf("%d ",a[i]);
+    }
+  printf("\n");
+}
+void buble(int *a, int n)
+{
+  int temp;
+  int issorted=0;  //checking is its soretd
+  for(int i=0;i<n-1;i++)
+    {
+      printf("working of pass %d\n",i+1);
+      issorted=1; //already sorrted
+      for(int j=0;j<n-1-i;j++)
+        {
+          if(a[j]>a[j+1])
+          {
+            temp=a[j];
+          a[j]=a[j+1];
+          a[j+1]=temp;
+            issorted=0; 
+          }
+      
+        }
+    }
+   if(issorted)
+         {
+           return;
+         }
+}
+ int main()
+{
+  int a[]={10,4,9,2,5};
+  //int a[]={1,2,3,4,5};
+  int n=5;
+  print(a,n); // before sorting
+  buble(a,n);
+  print(a,n); // after sorting
+}
