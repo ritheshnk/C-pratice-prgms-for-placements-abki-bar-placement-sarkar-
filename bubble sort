@@ -1,0 +1,35 @@
+#include<stdio.h>
+void print(int *a, int n)
+{
+  for(int i=0;i<n;i++)
+    {
+      printf("%d ",a[i]);
+    }
+  printf("\n");
+}
+void buble(int *a, int n)
+{
+  int temp;
+  for(int i=0;i<n-1;i++)
+    {
+      for(int j=0;j<n-1-i;j++)
+        {
+          if(a[j]>a[j+1])
+          {
+            temp=a[j];
+          a[j]=a[j+1];
+          a[j+1]=temp;
+          }
+          
+      
+        }
+    }
+}
+ int main()
+{
+  int a[]={10,4,9,2,5};
+  int n=5;
+  print(a,n); // before sorting
+  buble(a,n);
+  print(a,n); // after sorting
+}
