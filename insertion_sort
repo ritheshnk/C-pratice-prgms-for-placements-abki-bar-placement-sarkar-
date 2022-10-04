@@ -1,0 +1,36 @@
+//inserrtion sort  
+#include<stdio.h>
+
+void print(int *a,int n)
+{
+  for(int i=0;i<n;i++)
+    {
+      printf("%d ",a[i]);
+    }
+  printf("\n");
+}
+void insertion(int *a,int n)
+{
+  int num,j,i;
+  //loop for passes
+  for( i=1;i<n;i++)
+    {
+      num=a[i]; // num is the num which u insert 
+      j=i-1;    // j is the comparing element a[j]=65 u compare with  35
+      while(j>=0 && a[j]>num) //loop for each pass
+        {
+          a[j+1]=a[j];
+          j--;
+        }
+      a[j+1]=num;  //if u reach starting postion refer harry insertion sort  12:00
+    }
+}
+
+int main()
+{
+  int a[]={65,35,8,24,15};
+  int n=5;
+  print(a,n);
+  insertion(a,n);
+  print(a,n);
+}
