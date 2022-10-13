@@ -1,0 +1,23 @@
+
+// soem changes may be required
+
+#include<stdio.h>
+
+int year=2000 ;
+int count =0;
+int main()
+{
+  do{
+    if((year%4==0) && ((year%400)==0) || (year%100!=0)) 
+      {
+        count ++;
+      
+      }
+
+  year++;
+      
+  }while (year>=2000 && year<=2999);
+  printf("%d\n",count);
+  return count;
+}
+
