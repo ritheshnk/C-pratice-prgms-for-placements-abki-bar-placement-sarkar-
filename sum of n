@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int sumofn(int n)
+{
+ if(n==0)
+ {
+   return 0;
+ }else {
+
+  return n+sumofn(n-1);
+ }
+}
+int  main()
+{
+  int n;
+  printf("enter a num:\n");
+  scanf("%d",&n);
+  printf("the sum of %d is : %d",n, sumofn(n));
+  return 0;
+}
+
