@@ -8,9 +8,11 @@ int main()
   printf("enter 2 nmuber to swap:\n");
   scanf("%d %d",&a,&b);
   printf("before swaping the value value of a:%d and b=%d",a,b);
- // ex: a=10 b=20
+  
+         // ex: a=10 b=20
   a=a+b; // a=10+20  a=30
   b=a-b; //b=30-20  b=10
   a=a-b;
+  
   printf("\nafter swap a=%d b=%d",a,b);
 }
