@@ -13,7 +13,7 @@ void removeChar(char * a,char remove)
           {
             a[j]=a[j+1]; //deletion condition
           }
-        len--;
+       
       
       }
     }
