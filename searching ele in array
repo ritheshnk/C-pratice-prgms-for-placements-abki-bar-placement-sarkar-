@@ -1,0 +1,38 @@
+#include<stdio.h>
+#define MAX_SIZE 100
+
+int main()
+{
+    int a[MAX_SIZE];
+    int n,ele,found;
+    
+    printf("enter size of an array: ");
+    scanf("%d",&n);
+    
+    printf("\nenter array ele ");
+    for(int i=0;i<n;i++)
+    {
+      scanf("%d",&a[i]);  
+    }
+    
+    printf("\nenter the ele to be search :");
+    scanf("%d",&ele);
+    
+    found=0;
+    
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]==ele)
+        {
+            found=1;
+            break;
+        }
+    }
+    
+    if(found==1)
+    {
+        printf("ele is found");
+    }else{
+        printf("not found");
+    }
+}
