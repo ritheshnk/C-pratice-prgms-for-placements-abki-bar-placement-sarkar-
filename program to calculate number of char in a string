@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<stdlib.h>
+
+int main() {
+    // Write C code here
+    int sp=0,c=0,i;
+    char s[100];
+    printf("enter the string :");
+    gets(s);
+    for(i=0;s[i]!='\0';i++){
+        c++;
+        if(s[i] == 32){
+            sp++;
+        }
+    }
+    int nospace=sp+1;
+    printf("number of char and word is %d and %d \n", c ,sp+1);
+    printf("number of char without includeing space %d ",c-sp);
+
+    return 0;
+}
